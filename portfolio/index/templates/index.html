@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Portfolio</title>
+</head>
+<body>
+ <div class="portf">Здесь будет портфолио</div>
+ <div class="response">
+     <form method="post" action="send_email/" autocomplete="off">
+
+        {% csrf_token %}
+
+         <input name="username" id="username" placeholder="Your name" />
+         <input name="subject" id="subject" placeholder="Subject" />
+         <input name="message" id="email" placeholder="Enter your message" />        
+         <input type="submit" value="Submit" />
+     </form>
+ </div>
+</body>
+</html>
