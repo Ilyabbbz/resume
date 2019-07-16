@@ -1,23 +1,87 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="{% static 'index.css' %}">
    <title>Portfolio</title>
 </head>
 <body>
- <div class="portf">Здесь будет портфолио</div>
- <div class="response">
-     <form method="post" action="send_email/" autocomplete="off">
+<h1> Фабрисенко Илья </h1>
 
-        {% csrf_token %}
+<h2> Образование </h2>
 
-         <input name="username" id="username" placeholder="Your name" />
-         <input name="subject" id="subject" placeholder="Subject" />
-         <input name="message" id="email" placeholder="Enter your message" />        
-         <input type="submit" value="Submit" />
-     </form>
- </div>
+<a>Я закончил 11 классов школы, сейчас обучаюсь в Московском финансово-юридическом университете (МФЮА) по специальности «Информационные системы и технологии в бизнесе», перехожу на второй курс. </a>
+
+<h2> Навыки </h2>
+
+<p> Личным стремлением, в связи с интересом к программированию я освоил данные языки: </p>
+<ul>
+    <li> Python </li>
+    <li> HTML </li>
+    <li> CSS </li>
+    <li> SQL </li>
+    <li> C++ </li>
+    <li> JavaScript </li>
+</ul>
+
+<p> Я осваиваю фреймворки: </p>
+<ul>
+    <li> Django </li>
+    <li> Django-rest-framework </li>
+    <li> React </li>
+    <li> Bootstrap </li>
+</ul>
+
+<p> Так-же читаю книги: </p>
+<ul>
+    <li> Бэрри Пол, «Изучаем программирование на Python». </li>
+    <li> Васильев Алексей Николаевич, «Программирование на C++ в примерах и задачах». </li>
+</ul>
+
+<p> Для разработки пользуюсь Операционными системами Windows и linux(Ubuntu). </p>
+
+<h2> Сертификаты </h2>
+
+<p> Я прошел электронные курсы, и получил сертификаты по таким языкам, как: </p>
+<ul>
+        <!-- <a href="http://metanit.com/web/html5/" >Учебник по HTML5</a> -->
+    <li><a href="https://www.sololearn.com/Certificate/1014-3403841/pdf/" target="_blank"> [HTML] </a></li>
+    <li> [CSS](https://www.sololearn.com/Certificate/1023-3403841/pdf/) </li>
+    <li> [SQL](https://www.sololearn.com/Certificate/1060-3403841/pdf/) </li>
+    <li> [C++](https://www.sololearn.com/Certificate/1051-3403841/pdf/) </li>
+</ul>
+<form id="wrapper" method="post" action="send_email/" autocomplete="off">
+
+    {% csrf_token %}
+
+    <div class="grid">
+        <div class="free">
+        <label>Тема:<br/></label>
+        <input id="subject" name="subject" required placeholder="Тема" />
+        </div>
+        <div class="free">
+        <label>Ваше имя:<br/></label>
+        <input id="username" name="username" required placeholder="Имя" />
+        </div>
+        <div class="free">
+        <label>Ваш номер телефона:<br/></label>
+        <input name="phone" required placeholder="89009009090" />
+        </div>
+        <div class="free">
+        <label>Ваша электронная почта:<br/></label>
+        <input name="mailadr" required placeholder="sample@sample.sa" />         
+        </div>
+    </div>
+
+    <div class="message">
+    <label>Введите сообщение:<br/></label>
+    <input name="message" required placeholder="Сообщение" />
+    </div>
+    <input id="btn" type="submit" value="Submit" />
+</form>
 </body>
 </html>
