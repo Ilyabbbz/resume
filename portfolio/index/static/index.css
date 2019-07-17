@@ -28,31 +28,24 @@ a, ul {
 /*          _____resume_____          */
 .educ {
   grid-area: educ;
-  border: 2px dashed orange;
-  /* width: 1200px; */
+
 }
 .skills {
-  border: 2px dashed hotpink;
   grid-area: skills;
 }
 .cert {
-  border: 2px dashed grey;
   grid-area: cert;
 }
 .git {
   grid-area: git;
-  border: 2px dashed grey;
 }
 .gitlog{
   width: 60px;
   height: 60px;
-  border: 2px solid pink;
 }
 
 .gridup{
-  border: 2px solid black;
   display: grid;
-  /* margin-top: 200px; */
   grid-template-columns: 2fr 1fr;
   grid-template-rows: .5fr repeat(2, 1fr);
   grid-template-areas:
@@ -61,17 +54,6 @@ a, ul {
     "skills git";
   grid-gap: 10px;
 }
-
-/*          _____Form_____          */
-.free{
-  /* width = ~300px*/
-  border: 2px dotted #4290f5;
-}
-/* @media screen and (max-width: 600px) {
-  body {
-    background-color: pink;
-  }
-} */
 
 .sub {
   grid-area: sub;
@@ -87,7 +69,6 @@ a, ul {
 }
 
 .grid{
-  border: 2px dashed salmon;
   display: grid;
   margin-top: 200px;
   grid-template-columns: repeat(4, 2fr) 1fr;
@@ -121,7 +102,6 @@ a, ul {
 
 .message{
   margin-top: 200px;
-  /*   border: 1px solid; */
 }
 .message input{
   text-align: none;
