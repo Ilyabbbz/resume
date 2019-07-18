@@ -15,13 +15,13 @@ h1 {
   font-size: 2.5rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 p{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 a{
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 ul{
   font-size: 1rem;
@@ -49,11 +49,9 @@ ul{
   width: 60px;
   height: 60px;
 }
-.educ, .skills, .cert {
+.educ, .skills, .cert, .git, .sub, .pho, .nam, .mai, .message {
   border: 2px dashed palevioletred;
 }
-/* .git, .sub, .pho, .nam, .message */
-
 .gridup{
   display: grid;
   grid-template-columns: 2fr 1fr;
